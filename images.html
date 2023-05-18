@@ -13,7 +13,7 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">    </head>
     <body>
         <!--Nav Bar-->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark ">
             <div class="container-fluid">
               <a class="navbar-brand" href="#">Placeholder for Logo</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,9 +43,31 @@
               </div>
             </div>
           </nav>
-
+          <!--Second NavBar: Section Navigation-->
+          <div class="sticky-top">
+          <nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3">
+            <a class="navbar-brand" href="#">Image AIGC</a>
+            <ul class="nav nav-pills">
+              <li class="nav-item">
+                <a class="nav-link" href="#scrollspyHeading1">First</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#scrollspyHeading2">Second</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#scrollspyHeading3">Third</a></li>
+                  <li><a class="dropdown-item" href="#scrollspyHeading4">Fourth</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#scrollspyHeading5">Fifth</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
           <!--Carosel-->
-          <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div id="myCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-theme="dark">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class="active" aria-current="true"></button>
@@ -63,14 +85,24 @@
                 </div>
               </div>
               <div class="carousel-item active">
-                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
-                <div class="container">
-                  <div class="carousel-caption">
-                    <h1>Another example headline.</h1>
-                    <p>Some representative placeholder content for the second slide of the carousel.</p>
-                    <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+                <div class="container col-xxl-8 px-4 py-5">
+                    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                      <div class="col-10 col-sm-8 col-lg-6">
+                        <img src="assets/DALL·E 2023-05-18 16.20.20 - a sunlit indoor lounge area with a pool with clear water and another pool with translucent pastel pink water, next to a big window, digital art.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="1300" height="900" loading="lazy">
+                      </div>
+                      <div class="col-lg-6">
+                        <h1 class="display-5 fw-bold lh-1 mb-3" >Image Based</h1>
+                        <h1 class="display-6 fw-bold lh-1 mb-3">AI Generated Content</h1>
+                        <p class="lh-2">Image-based AI-generated content of AIGC refers to the creation of images, videos, 
+                            and visual media using artificial intelligence techniques. By training AI models on vast datasets of existing visual content, 
+                            such as photographs, paintings, or videos, these models can learn patterns, styles, and structures present in the data.
+                            Once trained, they can generate new and original visual content that resembles the style or subject matter of the input data. 
+                            This technology has been used to create realistic human faces, generate artwork, generate synthetic images for virtual reality,
+                             and even produce deepfake videos. However, it also raises ethical concerns regarding copyright, authenticity, and the potential 
+                             misuse of AI-generated content for misinformation or malicious purposes.</p>
+                      </div>
+                    </div>
                   </div>
-                </div>
               </div>
               <div class="carousel-item">
                 <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
@@ -103,108 +135,45 @@
                 </figcaption>
               </figure>
           </div>
+
+          <!--Main Body-->
           <div class="container">
-            <div class="row">
-                <div class="col-4">
-                  <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-4 border-end">
-                    <nav class="nav nav-pills flex-column">
-                      <a class="nav-link" href="#item-1">Item 1</a>
-                      <nav class="nav nav-pills flex-column">
-                        <a class="nav-link ms-3 my-1" href="#item-1-1">Item 1-1</a>
-                        <a class="nav-link ms-3 my-1" href="#item-1-2">Item 1-2</a>
-                      </nav>
-                      <a class="nav-link" href="#item-2">Item 2</a>
-                      <a class="nav-link" href="#item-3">Item 3</a>
-                      <nav class="nav nav-pills flex-column">
-                        <a class="nav-link ms-3 my-1" href="#item-3-1">Item 3-1</a>
-                        <a class="nav-link ms-3 my-1" href="#item-3-2">Item 3-2</a>
-                      </nav>
-                    </nav>
-                  </nav>
-                </div>
-              
-                <div class="col-8">
-                  <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true" class="scrollspy-example-2" tabindex="0">
-                    <div id="item-1">
-                      <h4>Item 1</h4>
-                      <p>AI, or artificial intelligence, refers to the development of computer systems that can perform tasks that would typically 
-                        require human intelligence. It encompasses various techniques and algorithms that enable machines to learn from data, reason, 
-                        and make decisions. AI has made significant advancements in fields such as machine learning, natural language processing, 
-                        and computer vision. It has found applications in diverse domains, including healthcare, finance, transportation, and entertainment. 
-                        AI systems can analyze vast amounts of data, identify patterns, and make predictions, leading to improved efficiency and accuracy. 
-                        However, ethical considerations surrounding AI, such as privacy and bias, must be addressed to ensure responsible and fair deployment 
-                        of these technologies. As AI continues to evolve, it holds great potential to transform industries, enhance human productivity, and 
-                        solve complex problems.
-                      </p>
-                    </div>
-                    <div id="item-1-1">
-                      <h5>Item 1-1</h5>
-                      <p>AI, or artificial intelligence, refers to the development of computer systems that can perform tasks that would typically 
-                        require human intelligence. It encompasses various techniques and algorithms that enable machines to learn from data, reason, 
-                        and make decisions. AI has made significant advancements in fields such as machine learning, natural language processing, 
-                        and computer vision. It has found applications in diverse domains, including healthcare, finance, transportation, and entertainment. 
-                        AI systems can analyze vast amounts of data, identify patterns, and make predictions, leading to improved efficiency and accuracy. 
-                        However, ethical considerations surrounding AI, such as privacy and bias, must be addressed to ensure responsible and fair deployment 
-                        of these technologies. As AI continues to evolve, it holds great potential to transform industries, enhance human productivity, and 
-                        solve complex problems.</p>
-                    </div>
-                    <div id="item-1-2">
-                      <h5>Item 1-2</h5>
-                      <p>AI, or artificial intelligence, refers to the development of computer systems that can perform tasks that would typically 
-                        require human intelligence. It encompasses various techniques and algorithms that enable machines to learn from data, reason, 
-                        and make decisions. AI has made significant advancements in fields such as machine learning, natural language processing, 
-                        and computer vision. It has found applications in diverse domains, including healthcare, finance, transportation, and entertainment. 
-                        AI systems can analyze vast amounts of data, identify patterns, and make predictions, leading to improved efficiency and accuracy. 
-                        However, ethical considerations surrounding AI, such as privacy and bias, must be addressed to ensure responsible and fair deployment 
-                        of these technologies. As AI continues to evolve, it holds great potential to transform industries, enhance human productivity, and 
-                        solve complex problems.</p>
-                    </div>
-                    <div id="item-2">
-                      <h4>Item 2</h4>
-                      <p>AI, or artificial intelligence, refers to the development of computer systems that can perform tasks that would typically 
-                        require human intelligence. It encompasses various techniques and algorithms that enable machines to learn from data, reason, 
-                        and make decisions. AI has made significant advancements in fields such as machine learning, natural language processing, 
-                        and computer vision. It has found applications in diverse domains, including healthcare, finance, transportation, and entertainment. 
-                        AI systems can analyze vast amounts of data, identify patterns, and make predictions, leading to improved efficiency and accuracy. 
-                        However, ethical considerations surrounding AI, such as privacy and bias, must be addressed to ensure responsible and fair deployment 
-                        of these technologies. As AI continues to evolve, it holds great potential to transform industries, enhance human productivity, and 
-                        solve complex problems.</p>
-                    </div>
-                    <div id="item-3">
-                      <h4>Item 3</h4>
-                      <p>AI, or artificial intelligence, refers to the development of computer systems that can perform tasks that would typically 
-                        require human intelligence. It encompasses various techniques and algorithms that enable machines to learn from data, reason, 
-                        and make decisions. AI has made significant advancements in fields such as machine learning, natural language processing, 
-                        and computer vision. It has found applications in diverse domains, including healthcare, finance, transportation, and entertainment. 
-                        AI systems can analyze vast amounts of data, identify patterns, and make predictions, leading to improved efficiency and accuracy. 
-                        However, ethical considerations surrounding AI, such as privacy and bias, must be addressed to ensure responsible and fair deployment 
-                        of these technologies. As AI continues to evolve, it holds great potential to transform industries, enhance human productivity, and 
-                        solve complex problems.</p>
-                    </div>
-                    <div id="item-3-1">
-                      <h5>Item 3-1</h5>
-                      <p>AI, or artificial intelligence, refers to the development of computer systems that can perform tasks that would typically 
-                        require human intelligence. It encompasses various techniques and algorithms that enable machines to learn from data, reason, 
-                        and make decisions. AI has made significant advancements in fields such as machine learning, natural language processing, 
-                        and computer vision. It has found applications in diverse domains, including healthcare, finance, transportation, and entertainment. 
-                        AI systems can analyze vast amounts of data, identify patterns, and make predictions, leading to improved efficiency and accuracy. 
-                        However, ethical considerations surrounding AI, such as privacy and bias, must be addressed to ensure responsible and fair deployment 
-                        of these technologies. As AI continues to evolve, it holds great potential to transform industries, enhance human productivity, and 
-                        solve complex problems.</p>
-                    </div>
-                    <div id="item-3-2">
-                      <h5>Item 3-2</h5>
-                      <p>AI, or artificial intelligence, refers to the development of computer systems that can perform tasks that would typically 
-                        require human intelligence. It encompasses various techniques and algorithms that enable machines to learn from data, reason, 
-                        and make decisions. AI has made significant advancements in fields such as machine learning, natural language processing, 
-                        and computer vision. It has found applications in diverse domains, including healthcare, finance, transportation, and entertainment. 
-                        AI systems can analyze vast amounts of data, identify patterns, and make predictions, leading to improved efficiency and accuracy. 
-                        However, ethical considerations surrounding AI, such as privacy and bias, must be addressed to ensure responsible and fair deployment 
-                        of these technologies. As AI continues to evolve, it holds great potential to transform industries, enhance human productivity, and 
-                        solve complex problems.</p>
-                    </div>
-                  </div>
-                </div>
+            <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+                <h4 id="scrollspyHeading1">First heading</h4>
+                <p>AI-generated content refers to any form of content created or generated by artificial intelligence systems. 
+                    With advancements in natural language processing and machine learning, AI is increasingly capable of generating text, 
+                    images, videos, and even music. This technology has revolutionized various industries, including marketing, journalism, 
+                    and entertainment. AI-generated content offers numerous benefits, such as increased productivity, cost-efficiency, 
+                    and personalized experiences. However, it also raises concerns about authenticity, ethics, and the potential for misuse.
+                </p>
+                <h4 id="scrollspyHeading2">Second heading</h4>
+                <p>One major advantage of AI-generated content is its ability to enhance productivity. AI systems can quickly generate 
+                    large volumes of content, such as articles, reports, or product descriptions, in a fraction of the time it would take 
+                    a human. This allows businesses to streamline their content creation processes and meet the ever-growing demand for 
+                    fresh and engaging material. Moreover, AI can automate repetitive tasks, freeing up human resources to focus on more 
+                    strategic and creative endeavors.
+                </p>
+                <h4 id="scrollspyHeading3">Third heading</h4>
+                <p>Another benefit is cost-efficiency. AI-generated content eliminates the need for hiring additional staff 
+                    or outsourcing content creation, reducing expenses for businesses. Furthermore, AI systems can learn from 
+                    existing content and user feedback, continuously improving their output and reducing the margin of error over 
+                    time. This cost-effective approach to content creation enables companies to scale their operations, reach wider 
+                    audiences, and maintain a competitive edge in today's fast-paced digital landscape.
+                </p>
+                <h4 id="scrollspyHeading4">Fourth heading</h4>
+                <p>AI-generated content also enables personalized experiences for users. By analyzing vast amounts of data, 
+                    AI systems can tailor content to individual preferences, delivering highly targeted and relevant information. 
+                    Personalization enhances customer engagement, increases conversion rates, and fosters brand loyalty. 
+                    Whether it's personalized product recommendations, tailored news feeds, or customized advertisements, 
+                    AI-generated content has the potential to provide users with a more immersive and satisfying online experience.
+                </p>
+                <h4 id="scrollspyHeading5">Fifth heading</h4>
+                <p>However, the rise of AI-generated content also brings forth challenges and concerns. One of the main concerns is 
+                    the issue of authenticity. AI can mimic human language and style, making it increasingly difficult to differentiate 
+                    between human-generated and AI-generated content. This raises questions about the credibility and trustworthiness of 
+                    information presented to users. As AI becomes more sophisticated, it is crucial to develop mechanisms that can verify 
+                    the authenticity of content and ensure transparency in its creation.
+                </p>
               </div>
           </div>
         <!--Co-->
