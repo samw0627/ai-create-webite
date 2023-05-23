@@ -13,6 +13,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
@@ -54,23 +56,33 @@
         <a class="navbar-brand" href="#">Image AIGC</a>
         <ul class="nav nav-pills">
           <li class="nav-item">
-            <a class="nav-link" href="#scrollspyHeading1">First</a>
+            <a class="nav-link" href="#scrollspyHeading1">Overview</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#scrollspyHeading2">Second</a>
+            <a class="nav-link" href="#scrollspyHeading2">Education</a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#scrollspyHeading3">Third</a></li>
-              <li><a class="dropdown-item" href="#scrollspyHeading4">Fourth</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#scrollspyHeading5">Fifth</a></li>
-            </ul>
+          <li class="nav-item">
+            <a class="nav-link" href="#scrollspyHeading3">Healthcare</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#scrollspyHeading4">E-Commerce</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#scrollspyHeading5">Entertainment</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#scrollspyHeading6">Security and Surveillance</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#scrollspyHeading7">Meet our Interviewees</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#scrollspyHeading8">Resources</a>
           </li>
         </ul>
       </nav>
     </div>
+
   <!--Carosel-->
   <div id="myCarousel" class="carousel slide" data-bs-theme="dark">
     <div class="carousel-indicators">
@@ -119,17 +131,50 @@
           </div>
         </div>
       </div>
-      
+      <!--4 Image Layout-->
       <div class="carousel-item">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
-          preserveAspectRatio="xMidYMid slice" focusable="false">
-          <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
-        </svg>
-        <div class="container">
-          <div class="carousel-caption text-end">
-            <h1>One more for good measure.</h1>
-            <p>Some representative placeholder content for the third slide of this carousel.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+        <div class="container col-xxl-9 px-4 py-5">
+          <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <h1>Image-Based Feature</h1>
+          <p>Image-based AI-generated content offers realistic visuals, enables style transfer, 
+            enhances efficiency and scalability, and allows for customization, revolutionizing 
+            industries and providing creative possibilities.</p>
+          </div>
+          <div class = "row">
+            <div class = "col-5">
+              <img id="image-carosel-1" src="assets/placeholder.jpeg" class="align-items-center justify-content-center">
+            </div>
+            <div class = "col px-0">
+              <!--1st Image-->
+              <div class="row">
+                <div class="col-4 px-0">
+                  <img id="image-carosel-2"src="assets/placeholder.jpeg">
+                </div>
+                <div class="col px-0">
+                  <p>Realism: AI algorithms can produce visually realistic images that closely resemble real-world objects, 
+                    scenes, or people, providing a high level of fidelity in the generated content.</p>
+                </div>
+              </div>
+              <!--2nd Image-->
+              <div class="row">
+                <div class="col-4 px-0">
+                  <img id="image-carosel-3"src="assets/placeholder.jpeg">
+                </div>
+                <div class="col px-0">
+                  <p>Style Transfer: AI models can transfer the style or artistic characteristics of one image onto another, allowing for the creation of 
+                    unique visual compositions or the replication of specific artistic styles.</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-4 px-0">
+                  <img id="image-carosel-4"src="assets/placeholder.jpeg">
+                </div>
+                <div class="col px-0">
+                  <p>Efficiency and Scalability: AI algorithms can generate content at a faster pace and in larger quantities compared to traditional manual methods,
+                     enabling streamlined productions and increased scalability.</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -148,46 +193,97 @@
   <div class="container">
     <figure>
       <blockquote class="blockquote">
-        <p>A well-known quote, contained in a blockquote element.</p>
+        <p>"AI art generators are “trained” by scraping (that is, copying) billions of images from the internet, and effectively reassembling them in a different form." </p>
       </blockquote>
       <figcaption class="blockquote-footer">
-        Someone famous in <cite title="Source Title">Source Title</cite>
+        <cite title="Source Title">Bendor Grosvenor</cite>
       </figcaption>
     </figure>
   </div>
 
   <!--Main Body-->
-  <div class="container-fluid">
+  <div id="image-main"class="container-fluid">
     <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
-      <h4 id="scrollspyHeading1">First heading</h4>
-      <p>AI-generated content refers to any form of content created or generated by artificial intelligence systems. 
-          With advancements in natural language processing and machine learning, AI is increasingly capable of generating text, 
-          images, videos, and even music. This technology has revolutionized various industries, including marketing, journalism, 
-          and entertainment. AI-generated content offers numerous benefits, such as increased productivity, cost-efficiency, 
-          and personalized experiences. However, it also raises concerns about authenticity, ethics, and the potential for misuse.
-      </p>
-      <h4 id="scrollspyHeading2">Second heading</h4>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+            <img id="image-carosel-3"src="assets/placeholder.jpeg">
+          </div>
+          <div class="col">
+            <h4 id="scrollspyHeading1">Overview</h4>
+            <p>AI-generated content refers to any form of content created or generated by artificial intelligence systems. 
+                With advancements in natural language processing and machine learning, AI is increasingly capable of generating text, 
+                images, videos, and even music. This technology has revolutionized various industries, including marketing, journalism, 
+                and entertainment. AI-generated content offers numerous benefits, such as increased productivity, cost-efficiency, 
+                and personalized experiences. However, it also raises concerns about authenticity, ethics, and the potential for misuse.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <img id="image-carosel-3"src="assets/placeholder.jpeg">
+          </div>
+          <div class="col-md-4">
+            <img id="image-carosel-3"src="assets/placeholder.jpeg">
+          </div>
+          <div class="col-md-4">
+            <img id="image-carosel-3"src="assets/placeholder.jpeg">
+          </div>
+        </div>
+        <div class="row">
+          <p>AI-generated content refers to any form of content created or generated by artificial intelligence systems. 
+            With advancements in natural language processing and machine learning, AI is increasingly capable of generating text, 
+            images, videos, and even music. This technology has revolutionized various industries, including marketing, journalism, 
+            and entertainment. AI-generated content offers numerous benefits, such as increased productivity, cost-efficiency, 
+            and personalized experiences. However, it also raises concerns about authenticity, ethics, and the potential for misuse.
+        </p>
+        </div>
+      </div>
+      
+      <h4 id="scrollspyHeading2">Education</h4>
       <p>One major advantage of AI-generated content is its ability to enhance productivity. AI systems can quickly generate 
           large volumes of content, such as articles, reports, or product descriptions, in a fraction of the time it would take 
           a human. This allows businesses to streamline their content creation processes and meet the ever-growing demand for 
           fresh and engaging material. Moreover, AI can automate repetitive tasks, freeing up human resources to focus on more 
           strategic and creative endeavors.
+          <a class="nav-link" href="#scrollspyHeading3">Healthcare</a>
       </p>
-      <h4 id="scrollspyHeading3">Third heading</h4>
+      <h4 id="scrollspyHeading3">Healthcare</h4>
       <p>Another benefit is cost-efficiency. AI-generated content eliminates the need for hiring additional staff 
           or outsourcing content creation, reducing expenses for businesses. Furthermore, AI systems can learn from 
           existing content and user feedback, continuously improving their output and reducing the margin of error over 
           time. This cost-effective approach to content creation enables companies to scale their operations, reach wider 
           audiences, and maintain a competitive edge in today's fast-paced digital landscape.
       </p>
-      <h4 id="scrollspyHeading4">Fourth heading</h4>
+      <h4 id="scrollspyHeading4">E-Commerce</h4>
       <p>AI-generated content also enables personalized experiences for users. By analyzing vast amounts of data, 
           AI systems can tailor content to individual preferences, delivering highly targeted and relevant information. 
           Personalization enhances customer engagement, increases conversion rates, and fosters brand loyalty. 
           Whether it's personalized product recommendations, tailored news feeds, or customized advertisements, 
           AI-generated content has the potential to provide users with a more immersive and satisfying online experience.
       </p>
-      <h4 id="scrollspyHeading5">Fifth heading</h4>
+      <h4 id="scrollspyHeading5">Entertainment</h4>
+      <p>However, the rise of AI-generated content also brings forth challenges and concerns. One of the main concerns is 
+          the issue of authenticity. AI can mimic human language and style, making it increasingly difficult to differentiate 
+          between human-generated and AI-generated content. This raises questions about the credibility and trustworthiness of 
+          information presented to users. As AI becomes more sophisticated, it is crucial to develop mechanisms that can verify 
+          the authenticity of content and ensure transparency in its creation.
+      </p>
+      <h4 id="scrollspyHeading6">Security & Surveillance </h4>
+      <p>However, the rise of AI-generated content also brings forth challenges and concerns. One of the main concerns is 
+          the issue of authenticity. AI can mimic human language and style, making it increasingly difficult to differentiate 
+          between human-generated and AI-generated content. This raises questions about the credibility and trustworthiness of 
+          information presented to users. As AI becomes more sophisticated, it is crucial to develop mechanisms that can verify 
+          the authenticity of content and ensure transparency in its creation.
+      </p>
+      <h4 id="scrollspyHeading7">Meet our interviewees </h4>
+      <p>However, the rise of AI-generated content also brings forth challenges and concerns. One of the main concerns is 
+          the issue of authenticity. AI can mimic human language and style, making it increasingly difficult to differentiate 
+          between human-generated and AI-generated content. This raises questions about the credibility and trustworthiness of 
+          information presented to users. As AI becomes more sophisticated, it is crucial to develop mechanisms that can verify 
+          the authenticity of content and ensure transparency in its creation.
+      </p>
+      <h4 id="scrollspyHeading8">Resources </h4>
       <p>However, the rise of AI-generated content also brings forth challenges and concerns. One of the main concerns is 
           the issue of authenticity. AI can mimic human language and style, making it increasingly difficult to differentiate 
           between human-generated and AI-generated content. This raises questions about the credibility and trustworthiness of 
