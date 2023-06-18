@@ -1,14 +1,21 @@
 #image-carosel-1{
     width: 400px;
+    border-radius: 25px;
+
 }
 #image-carosel-2{
     width: 200px;
+    border-radius: 25px;
 }
 #image-carosel-3{
     width: 200px;
+    border-radius: 25px;
+
 }
 #image-carosel-4{
     width: 200px;
+    border-radius: 25px;
+
 }
 #image-main{
     padding-left: 100px;
@@ -31,4 +38,13 @@
 
 .card-padding{
     padding-top: 350px;
+}
+
+body{
+    color: #cccccc;
+    font-family: 'Inter', sans-serif;
+}
+
+p{
+    font-weight: lighter;
 }
