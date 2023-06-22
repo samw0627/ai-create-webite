@@ -42,7 +42,11 @@
 }
 
 .card-padding{
-    padding-top: 350px;
+    padding-top: 270px;
+}
+
+.card-style{
+    opacity: 0.5;
 }
 
 body{
