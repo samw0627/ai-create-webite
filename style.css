@@ -57,3 +57,7 @@ body{
 p{
     font-weight: lighter;
 }
+
+i{
+    padding-bottom: 30px;
+}
